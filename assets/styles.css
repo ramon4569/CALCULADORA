@@ -1,0 +1,50 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ font-family: 'Segoe UI', sans-serif;
+ background: #f4f6fa;
+ padding: 24px;
+ color: #1a2238;
+ }
+ .container { max-width: 720px; margin: 0 auto; }
+ h1 {
+ background: linear-gradient(135deg, #002b7f, #ce1126);
+ color: white; padding: 20px; border-radius: 12px;
+ margin-bottom: 20px; font-size: 22px;
+ }
+ h2 { margin: 24px 0 14px; color: #002b7f; }
+
+form { background: white; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+ .campo { margin-bottom: 14px; }
+ label { display: block; font-size: 12px; color: #666; font-weight: 600; margin-bottom: 4px; text-transform: uppercase; }
+ input {
+ width: 100%; padding: 10px 12px;
+ border: 2px solid #ddd; border-radius: 6px;
+ font-size: 14px; outline: none;
+ transition: all .2s;
+ }
+ input:focus { border-color: #0284c7; }
+ input.valido { border-color: #22c55e; background: #f0fdf4; }
+ input.invalido { border-color: #ef4444; background: #fef2f2; }
+
+.err { display: block; color: #b91c1c; font-size: 12px; font-weight: 600; min-height: 16px; margin-top: 3px; }
+
+.calc { background: #f9fafb; border: 2px dashed #ddd; border-radius: 10px; padding: 16px; margin: 16px 0; }
+ .calc h3 { font-size: 14px; margin-bottom: 10px; color: #002b7f; }
+ .linea { display: flex; justify-content: space-between; font-size: 13px; color: #666; padding: 5px 0; }
+ .linea.neto { font-size: 16px; font-weight: 700; color: #ce1126; border-top: 2px solid #ddd; margin-top: 5px; padding-top: 8px; }
+ .linea span:last-child { font-family: 'Cascadia Code', monospace; }
+
+button {
+ width: 100%; padding: 14px;
+ background: linear-gradient(135deg, #002b7f, #ce1126);
+ color: white; border: none; border-radius: 8px;
+ font-size: 15px; font-weight: 700; cursor: pointer;
+ margin-top: 8px;
+ }
+ button:hover { transform: translateY(-1px); }
+ button:disabled { background: #94a3b8; cursor: not-allowed; }
+
+table { width: 100%; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.06); border-collapse: collapse; }
+ th { background: #002b7f; color: white; padding: 10px 14px; font-size: 12px; text-align: left; text-transform: uppercase; }
+ td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 13px; }
+ tr:last-child td { border: none; }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Quisqueya Payroll - Registro </title>
+
+</head>
+<body>
+    <div class="Container">
+    <h1>Quisqueya Payroll - Registrar Empleado</h1>
+    <form id="formEmpleado">
+        <div class="campo">
+        <label> Nombre Completo</label>
+        <input type="text" id="nombre" placeholder="Ej: Maria Perez">
+        <span class = "err" id="errNombre"></span>
+        </div>
+
+        <div class="campo">
+        <label> Cedula </label>
+        <input type="text" id="cedula" placeholder="402-2853714-4">
+        <span class = "err" id="errCedula"></span>
+        </div>
+
+        <div class="campo">
+        <label> Email</label>
+        <input type="text" id="email" placeholder="Ej: maria.perez@example.com">
+        <span class = "err" id="errEmail"></span>
+        </div>
+
+        <div class="campo">
+        <label> Telefono</label>
+        <input type="text" id="telefono" placeholder="Ej: 809-123-4567">
+        <span class = "err" id="errTelefono"></span>
+        </div>
+
+        <div class="campo">
+        <label> Salario Bruto</label>
+        <input type="number" id="salario" placeholder="Ej: 50000">
+        <span class = "err" id="errSalario"></span>
+        </div>
+
+        <div class = "Cale">
+        <h3> Calculo automatico</h3>
+        <div class="Linea">
+            <span> AFP (2.87%) </span>
+            <SPAN id="resAFP"> RD$ 0.0
+            </SPAN>
+        </div>
+        
+        <div class="Linea">
+            <span> SFS (3.04%) </span>
+            <SPAN id="resSFS"> RD$ 0.0
+            </SPAN>
+        </div>
+
+        <div class="Linea neto">
+            <span>Neto a Recibir </span>
+            <SPAN id="resNeto"> RD$ 0.0
+            </SPAN>
+        </div>
+        </div>
+
+        
+        <button type="submit" id="btnGuardar">Gurdar Empleado</button>
+    </form>
+
+    <h2>Empleados registrados</h2>
+    <table id="tablaEmpleados">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cédula</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Salario Bruto</th>
+                <th>AFP</th>
+                <th>SFS</th>
+                <th>Neto a Recibir</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyEmpleados"></tbody>
+    </table>
+    </div>
+    
+    <script src="/assets/app.js"></script>
+    
+</body>
+</html>
